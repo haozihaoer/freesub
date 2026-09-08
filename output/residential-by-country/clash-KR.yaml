@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
   type: vless
-  server: 104.27.82.154
-  port: 8880
-  uuid: 7ed93ccf-6a54-4b19-a9b4-aedfc79bab7d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: muddy-sky-4767.344-7a7.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  type: vless
   server: 188.114.97.6
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
@@ -31,43 +18,17 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  type: vless
-  server: 172.67.209.127
-  port: 8880
-  uuid: 25844c02-a1fe-43ec-a6b9-44e3bf375b83
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dark-breeze-a59a.494.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
-  type: ss
-  server: glance.asuscomm.com
-  port: 10099
-  cipher: chacha20-ietf-poly1305
-  password: '12242'
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
