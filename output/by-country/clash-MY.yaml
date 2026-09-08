@@ -6,6 +6,32 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
   type: vless
+  server: 104.18.43.76
+  port: 8880
+  uuid: 1563ad16-9ac7-4214-8eb7-303f745efb07
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: silent-cake-fb8d.69-a76.workers.dev
+- name: 🇲🇾 MY 02 - xiaohe
+  type: vless
+  server: 104.16.98.215
+  port: 8880
+  uuid: a8c23fe7-d2bb-46ba-a14e-8847f1944642
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: billowing-fire-a10b.301-d6c.workers.dev
+- name: 🇲🇾 MY 03 - xiaohe
+  type: vless
   server: 38.60.168.98
   port: 2087
   uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
@@ -17,7 +43,7 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 MY 02 - xiaohe
+- name: 🇲🇾 MY 04 - xiaohe
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -37,6 +63,8 @@ proxy-groups:
   - AUTO
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
+  - 🇲🇾 MY 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -44,5 +72,7 @@ proxy-groups:
   proxies:
   - 🇲🇾 MY 01 - xiaohe
   - 🇲🇾 MY 02 - xiaohe
+  - 🇲🇾 MY 03 - xiaohe
+  - 🇲🇾 MY 04 - xiaohe
 rules:
 - MATCH,PROXIES
