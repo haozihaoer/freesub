@@ -34,7 +34,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 94.183.170.135
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 04 - xiaohe
   type: vless
   server: 94.183.170.135
