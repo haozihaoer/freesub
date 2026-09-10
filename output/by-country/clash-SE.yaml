@@ -19,13 +19,6 @@ proxies:
     headers:
       Host: cf2.rumedia-cdn.com
 - name: 🇸🇪 SE 02 - xiaohe
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 03 - xiaohe
   type: vless
   server: 202.155.11.249
   port: 443
@@ -39,6 +32,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf2.rumedia-cdn.com
+- name: 🇸🇪 SE 03 - xiaohe
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
