@@ -6,17 +6,17 @@ log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - xiaohe
   type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
+  server: 38.60.168.98
+  port: 2087
+  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /db55c40bbc75
     headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
+      Host: 38.60.168.98
 - name: 🇲🇾 MY 02 - xiaohe
   type: vless
   server: 38.60.168.98
@@ -31,18 +31,20 @@ proxies:
     headers:
       Host: 38.60.168.98
 - name: 🇲🇾 MY 03 - xiaohe
-  type: vless
-  server: 38.60.168.98
-  port: 2087
-  uuid: 8a346b7c-5b95-4845-affa-0e5d9929e9ae
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /db55c40bbc75
+    path: /arki?ed=2048
     headers:
-      Host: 38.60.168.98
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
