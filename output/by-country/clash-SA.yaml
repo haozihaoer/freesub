@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - xiaohe
+- name: 🇸🇦 SA 01 - xiaohe
   type: vless
-  server: 189.74.97.43
-  port: 2087
-  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
+  server: 81.208.170.142
+  port: 1500
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /73b6faea2d00
-    headers:
-      Host: 189.74.97.43
+  reality-opts:
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+  servername: www.ebay.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - xiaohe
+  - 🇸🇦 SA 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - xiaohe
+  - 🇸🇦 SA 01 - xiaohe
 rules:
 - MATCH,PROXIES

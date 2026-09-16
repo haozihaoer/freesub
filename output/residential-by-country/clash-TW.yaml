@@ -20,7 +20,7 @@ proxies:
       Host: 59.125.69.19
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   type: ss
-  server: R3MRCG001287H3P.cybervena.com
+  server: r3mrcg001287h3p.cybervena.com
   port: 50099
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
@@ -35,12 +35,12 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 82259754d625.oylfmxz.cn
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: 82259754d625.oylfmxz.cn
+      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   type: ss
   server: r3mrcg001286ek2.cybervena.com
