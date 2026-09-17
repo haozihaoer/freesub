@@ -6,6 +6,18 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - xiaohe
   type: vless
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: usa.oblaco.bet
+  client-fingerprint: ''
+- name: 🇨🇭 CH 02 - xiaohe
+  type: vless
   server: 94.26.35.139
   port: 25720
   uuid: be83425f-74c5-4b03-9c4b-20aa16322698
@@ -22,11 +34,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 02 - xiaohe
 rules:
 - MATCH,PROXIES
