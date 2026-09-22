@@ -6,55 +6,29 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - xiaohe
   type: vless
-  server: 104.21.69.37
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  server: 103.200.28.113
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /vl/uWq9DFRgj8BwQiSXmZ46
+    path: /
     headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇨🇿 CZ 02 - xiaohe
-  type: vless
-  server: 45.130.125.126
-  port: 443
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇨🇿 CZ 03 - xiaohe
-  type: vless
-  server: 93.119.195.222
-  port: 48904
-  uuid: 87d65614-5658-4f26-8157-0591489d230a
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 CZ 01 - xiaohe
-  - 🇨🇿 CZ 02 - xiaohe
-  - 🇨🇿 CZ 03 - xiaohe
 rules:
 - MATCH,PROXIES
