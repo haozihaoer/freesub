@@ -6,46 +6,45 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 185.113.223.183
-  port: 8443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 172.64.158.146
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /channels/act
+    path: /?ed=2560security=tls
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 217.12.206.160
-  port: 81
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 46.8.200.91
+  port: 443
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: '%2Fmembers%2Fplaylist%3Fed%3D2560'
+    path: /cdn/v3/live
     headers:
-      Host: cdn8848.776676.xyz
+      Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
-  server: 5.101.114.44
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 172.67.158.158
+  port: 443
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: 4zgCcbCb10PqYIBNwmM4NVzNj4.RoyaehmaN5.WORkErs.DeV
   network: ws
   ws-opts:
-    path: /collection/directory?ed=2560
+    path: /vl/hVKvQ38dIVUYYMACe6IBe4E?ed=2560
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
