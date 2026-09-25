@@ -5,41 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
-  type: ss
-  server: 74.234.59.81
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: znEtjgHLXH4FBLic
+  type: vless
+  server: chat.openai.com
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-- name: 🇮🇪 IE 02 - xiaohe
-  type: ss
-  server: 74.234.59.81
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: znEtjgHLXH4FBLic
-  udp: true
-- name: 🇮🇪 IE 03 - xiaohe
-  type: ss
-  server: 74.234.59.81
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: znEtjgHLXH4FBLic
-  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
 rules:
 - MATCH,PROXIES
