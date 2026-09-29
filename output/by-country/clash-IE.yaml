@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
   type: vless
-  server: 104.21.48.107
+  server: 45.141.234.138
   port: 443
-  uuid: 29fb68bb-ff05-4fd4-8393-cc6c05d81a79
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: purple-butterfly-8496.erfannull36.workers.dev
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: purple-butterfly-8496.erfannull36.workers.dev
+      Host: edgetunnel-4uw.pages.dev
 - name: 🇮🇪 IE 02 - xiaohe
   type: vless
   server: 45.141.234.138
@@ -32,34 +32,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 03 - xiaohe
-  type: vless
-  server: 104.21.46.14
-  port: 443
-  uuid: ea50b1a3-3a98-4c5e-a150-48ada40d68d7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cf-vless-4cf55824.aimall.fr
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: cf-vless-4cf55824.aimall.fr
-- name: 🇮🇪 IE 04 - xiaohe
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome?ed#?ed=512
-    headers:
-      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -76,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - xiaohe
   - 🇮🇪 IE 02 - xiaohe
-  - 🇮🇪 IE 03 - xiaohe
-  - 🇮🇪 IE 04 - xiaohe
 rules:
 - MATCH,PROXIES
