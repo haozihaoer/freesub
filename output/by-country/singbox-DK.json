@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇩🇰 DK 01 - xiaohe",
+        "🇩🇰 DK 02 - xiaohe",
+        "🇩🇰 DK 03 - xiaohe",
+        "🇩🇰 DK 04 - xiaohe",
+        "🇩🇰 DK 05 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe"
+        "🇩🇰 DK 01 - xiaohe",
+        "🇩🇰 DK 02 - xiaohe",
+        "🇩🇰 DK 03 - xiaohe",
+        "🇩🇰 DK 04 - xiaohe",
+        "🇩🇰 DK 05 - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
